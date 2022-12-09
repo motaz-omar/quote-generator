@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lato", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  background: url(project-1.jpg) no-repeat center center / cover;
+}
+.container {
+  width: 550px;
+  height: 450px;
+}
+.title {
+  font-size: 1.2rem;
+  border: solid 2px rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  background-color: rgb(43, 43, 43);
+  padding: 5px;
+  width: 80%;
+  margin: 20px auto;
+  border-radius: 5px;
+}
+.quote-container {
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 50px 40px;
+  box-shadow: 0 0 10px;
+}
+.quote-container .text-area {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.quote-container .person {
+  font-size: 1.6rem;
+  color: red;
+  text-transform: uppercase;
+  margin: 20px;
+}
+.quote-container button {
+  font-size: 1.2rem;
+  background-color: rgb(43, 43, 43);
+  color: rgb(255, 255, 255);
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.quote-container button:active {
+  background-color: #add8e6;
+}
+@media (min-width: 300px) and (max-width: 700px) {
+  .quote-container .text-area {
+    font-size: 1.1rem;
+  }
+  .quote-container .person {
+    font-size: 1.3rem;
+  }
+  .quote-container button {
+    font-size: 0.8rem;
+  }
+}
